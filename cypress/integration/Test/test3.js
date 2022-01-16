@@ -17,5 +17,8 @@ describe("Test Suite for checkboxes", function () {
         //it will open in the same window
    
         cy.get('#opentab').invoke('removeAttr','target').click()
+        cy.url().should('include','rahulshettyacademy')
+        
+        cy.go('back')
     })
 })
